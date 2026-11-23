@@ -13,7 +13,7 @@ function WordResult({ syllable }: { syllable: string }) {
   const rest = word.slice(syllable.length)
 
   return (
-    <span className="text-4xl font-extrabold leading-tight uppercase break-words sm:text-5xl">
+    <span className="text-4xl leading-tight font-extrabold break-words uppercase sm:text-5xl">
       <span className="text-brand">{prefix}</span>
       {rest}
     </span>
@@ -30,7 +30,7 @@ export default function SyllableBoard({
     <div className="mt-8 flex min-h-45 w-full max-w-4xl flex-col items-center justify-center gap-2 rounded-2xl bg-white p-6 text-center shadow-md">
       {letter ? (
         <>
-          <span className="text-5xl font-extrabold leading-none text-brand sm:text-6xl">
+          <span className="text-5xl leading-none font-extrabold text-brand sm:text-6xl">
             {letter}
           </span>
 

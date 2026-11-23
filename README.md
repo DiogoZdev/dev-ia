@@ -36,6 +36,13 @@ yarn format:check     # Prettier (verificação)
 yarn typecheck        # checagem de tipos
 ```
 
+## Qualidade de código
+
+- **Prettier** formata o projeto e ordena as classes do Tailwind (`prettier-plugin-tailwindcss`).
+- **ESLint** roda com checagem de tipos (`typescript-eslint`) e regras de hooks/refresh do React.
+- **Pre-commit** (Husky + lint-staged) roda ESLint e Prettier apenas nos arquivos staged.
+- **CI** no GitHub Actions executa `lint`, `format:check`, `typecheck` e `build` em pushes na `main` e pull requests.
+
 ## Ferramentas
 
 - OpenCode
